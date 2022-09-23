@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+
+:root{
+    --light-color: hsl(225, 100%, 94%);
+    --accent-color: hsl(245, 75%, 52%);
+
+    --blue-pale-color: hsl(225, 100%, 98%);
+    --secundary-color: hsl(224, 23%, 55%);
+    --title-color: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background: url('images/pattern-background-desktop.svg') no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    padding: .5em;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+a:hover{
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    display: block;
+    margin: .5em auto;
+    border: none;
+    padding: 1em;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+
+main {
+    max-width: 450px;
+    background:  #fff;
+    border-radius: 1em;
+    margin-bottom:4em;
+    margin-top:5em;
+}
+
+.main-img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.main-text {
+    padding: 2em;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.main-title {
+    margin-bottom: 0.5em;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.main-description {
+    margin-bottom: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: var(--secundary-color);
+    font-size: 16px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    padding: 1.5em;
+    border-radius: 0.6rem;
+    margin: 2em 1em 2em 1em;
+}
+
+.music-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.plan-annual {
+    display: flex;
+}
+
+.annual-plan__title {
+    font-weight: 900;
+    margin-right: 4em;
+    font-size: 1.1rem;
+}
+
+.annual-plan__price {
+    color: var(--secundary-color);
+    margin-right: 4em;
+    font-size: 1.1rem;
+}
+
+.pay-btn {
+    color: var(--light-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    padding-top:1em;
+    padding-right:6.5em;
+    padding-left:6.5em;
+    padding-bottom:1em;
+    font-size: 16px;
+}
+
+.pay-btn:hover{
+    opacity: 0.7;
+}
+
+.cancel-btn {
+    background-color: #fff;
+    font-weight: 700;
+    color: var(--secundary-color);
+    padding: 1.5em;
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.cancel-btn:hover {
+    color: var(--title-color);
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 400px) {
+    body{
+        background: url('images/pattern-background-mobile.svg') no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    main {
+        max-width: 330px;
+        background:  #fff;
+        border-radius: 1em;
+        margin-bottom:1em;
+        margin-top:2em;
+    }
+
+    .main-text {
+        padding: 0.5em;
+        color: var(--title-color);
+        text-align: center;
+    }
+
+    .main-title {
+        margin-bottom: 0.5em;
+        font-size: 24px;
+    }
+
+    .plan {
+        padding: 1em;
+        border-radius: 0.6rem;
+        margin: 2em 1em 2em 1em;
+    }
+
+    .annual-plan__title {
+        font-weight: 900;
+        margin-right: 2em;
+        font-size: 15px;
+    }
+    
+    .annual-plan__price {
+        color: var(--secundary-color);
+        margin-right: 2em;
+        font-size: 15px;
+    }
+
+    .pay-btn {
+        color: var(--light-color);
+        background-color: var(--accent-color);
+        font-weight: 700;
+        padding-top:1.2em;
+        padding-right:5.5em;
+        padding-left:5.5em;
+        padding-bottom:1.2em;
+        font-size: 14px;
+    }
+
+    .cancel-btn {
+        background-color: #fff;
+        font-weight: 700;
+        color: var(--secundary-color);
+        padding: 0.8em;
+        font-size: 16px;
+        margin-top: 1em;
+    }
+}
